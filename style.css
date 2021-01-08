@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  background-color: grey;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+}
+
+.containerDisco {
+  background-color: lightblue;
+  color: red;
+  display: flex;
+  width: 50vw;
+}
+
+.disco {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: calc(100% / 3);
+}
+
+.poster {
+
+}
+
+.poster img {
+  width: 100px;
+  height: 100px;
+}
+
+.title {
+  color: white;
+}
+.author {
+  color: grey;
+}
+.year {
+  color: grey;
+}
