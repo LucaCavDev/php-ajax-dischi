@@ -16,7 +16,9 @@
 -->
 <div class="page">
   <header>
-
+    <div class="spotify">
+      Spotify
+    </div>
   </header>
 
   <div class="containerDisco">
