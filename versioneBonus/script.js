@@ -6,8 +6,8 @@ var app = new Vue ({
   mounted: function () {
     axios
       .get('data.php')
-      .then(response => {
-        this.dischi = response.data;
+      .then(risposta => {
+        this.dischi = risposta.data;
     });
   }
 });
