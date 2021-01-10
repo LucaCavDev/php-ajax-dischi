@@ -17,8 +17,9 @@
 <div class="page">
   <header>
     <div class="spotify">
-      Spotify
+      <img src="spotify.png" alt="">
     </div>
+
   </header>
 
   <div class="containerDisco">
