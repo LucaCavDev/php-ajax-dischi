@@ -16,11 +16,28 @@
 - uso di vue
 -->
   <div class="page" id="app">
+
     <header>
       <div class="spotify">
         <img src="spotify.png" alt="">
       </div>
     </header>
+<!--  -->
+    <div class="bottoni">
+
+      <button @click="clear">CLEAR</button>
+      <!-- <button v-for="disco in dischi" @click="update(disco.author)">
+        {{ disco.author }}
+      </button> -->
+      <button @click="update('Bon Jovi')">Bon Jovi</button>
+      <button @click="update('Queen')">Queen</button>
+      <button @click="update('Sting')">Sting</button>
+      <button @click="update('Steve Gadd Band')">Steve Gadd Band</button>
+      <button @click="update('Iron Maiden')">Iron Maiden</button>
+      <button @click="update('Eric Clapton')">Eric Clapton</button>
+    </div>
+<!--  -->
+    
     <div class="containerDisco">
       <div v-for="disco in dischi" class="disco">
         <div class="poster">

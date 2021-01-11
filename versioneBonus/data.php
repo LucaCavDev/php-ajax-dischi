@@ -41,6 +41,26 @@
     ]
   ];
 
-  echo json_encode($database);
+  $author = strtolower($_GET['author']);
 
+  // var_dump($author); die();
+
+  if (!$author) {
+
+    echo json_encode($database);
+
+  } else {
+
+    $res = [];
+
+    for ($x=0;$x<count($database);$x++) {
+      $disco = $database[$x];
+      if (strtolower($disco['author']) == $author) {
+        $res[] = $disco;
+      }
+    }
+
+    // var_dump($res); die();
+    echo json_encode($res);
+  }
 ?>
